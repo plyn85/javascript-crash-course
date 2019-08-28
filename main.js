@@ -1,28 +1,28 @@
-const todos = [
-{
-    id: 1,
-    text: 'take out trash',
-    isCompleted: true
-
-},
-
-{
-    id: 2,
-    text: 'meeting with boss',
-    isCompleted: true
-
-},
-{
-    id: 3,
-    text: 'dentist appointment',
-    isCompleted: false
-
+const x = 10;
+const y =10;
+if( x > 5 || y  ==10){
+    console.log("i love ten")
+}else if( x >10){
+console.log("x is greater than ten")
+}else {
+    console.log("i hate ten")
 }
-];
 
-const todoCompleted = todos.filter( function(todo){
-return todo.isCompleted === true;
-}).map(function(todo){
-return todo.text;
-})
-console.log(todoCompleted);
+
+// for loop examples
+// easiest example
+const fruits = ['apple', 'orange', 'pear', 'strawberry'];
+for(fruit in fruits){
+   console.log(`I love eating ${fruit} all day long`)
+}
+// for loop
+//second easiest example
+for(var i in fruits){
+    console.log(`I love eating ${fruits[i]} all day long`)
+}
+
+// for loop
+//old school  example
+for( i =0; i < fruits.length; i++){
+    console.log(`I love eating ${fruits[i]} all day long`)
+}
