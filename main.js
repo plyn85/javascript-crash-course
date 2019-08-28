@@ -12,17 +12,22 @@
 // }
 
 
-// while loops 
-var   i = 0;
- while(i < 10){
-console.log(`the number of times i said i hate javascipt is ${i}`)
-i ++;
- }
+// do while loops
+//do while loops code will be exacuted once even if its condtion is false
+// this is because the block of code is ran even before the condtion is checked
 
-//  while loops in arrays
-var fruits =  ['apples','oranges,','pears','bananas']
 var i = 0;
-while(i<fruits.length){
-    console.log(`i love to eat ${fruits[i]}all day long`)
+do {
+    console.log(`i am the greasest coder ever ${i}`)  
     i++;
-}
+}while(i<10);
+
+
+
+// do while loops in an array
+var fruits = ['apple','orange','pears','kiwi']
+var i =0;
+do{
+    console.log(`i love to eat ${fruits[i]} all the long`)
+    i++;
+}while(i < fruits.length)
