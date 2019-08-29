@@ -1,33 +1,24 @@
 
-// if else statments
+// classic way of writing  a function
+function addNums (num1, num2){
+return num1 + num2;
+}
 
-// const x = 10;
-// const y =10;
-// if( x > 5 || y  ==10){
-//     console.log("i love ten")
-// }else if( x >10){
-// console.log("x is greater than ten")
-// }else {
-//     console.log("i hate ten")
-// }
+console.log(addNums (5,5));
 
+// shorther way of writing a function introdeced in es6
 
-// do while loops
-//do while loops code will be exacuted once even if its condtion is false
-// this is because the block of code is ran even before the condtion is checked
+const addNums = (num1,num2) => num1+num2;
+console.log(addNums(10,10));
 
-var i = 0;
-do {
-    console.log(`i am the greasest coder ever ${i}`)  
-    i++;
-}while(i<10);
+// shortest way with only one value
+const addNums = num1 => num1 + 5;
+console.log(addNums(5));
 
+// using short functions on a foreach method on an array 
+// simplest way to loop trough an print out each item in an array
 
+const todos = ['cook','clean','wash','shit']
 
-// do while loops in an array
-var fruits = ['apple','orange','pears','kiwi']
-var i =0;
-do{
-    console.log(`i love to eat ${fruits[i]} all the long`)
-    i++;
-}while(i < fruits.length)
+todos.forEach((todo)=> console.log(todo))
+
