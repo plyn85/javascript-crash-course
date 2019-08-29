@@ -1,24 +1,15 @@
+// constructor function
 
-// classic way of writing  a function
-function addNums (num1, num2){
-return num1 + num2;
+function Person (firstName,lastName,dob){
+this.firstName = firstName;
+this.lastName = lastName;
+ this.dob = new Date(dob); //date object
 }
 
-console.log(addNums (5,5));
+// Instantiate object
+const person1 = new Person('John', 'doe', '2-16-1985'); 
+const person2 = new Person('Jane', 'doe', '2-26-1982'); 
+const person3 = new Person('Jim', 'doe', '23-26-1765'); 
+const person4 = new Person('James', 'doe', '23-16-1976'); 
 
-// shorther way of writing a function introdeced in es6
-
-const addNums = (num1,num2) => num1+num2;
-console.log(addNums(10,10));
-
-// shortest way with only one value
-const addNums = num1 => num1 + 5;
-console.log(addNums(5));
-
-// using short functions on a foreach method on an array 
-// simplest way to loop trough an print out each item in an array
-
-const todos = ['cook','clean','wash','shit']
-
-todos.forEach((todo)=> console.log(todo))
-
+console.log(person2.dob.getFullYear());
